@@ -21,7 +21,7 @@ export const HW3 = () => {
   };
 
   const handleSave = () => {
-    if (!currentText) return;
+    if (!currentText.trim()) return;
     setTexts([...texts, currentText]);
     setCurrentText("");
   };
